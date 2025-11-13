@@ -1,0 +1,63 @@
+/*  Contenido principal y animación */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
+  font-family: 'Poppins', sans-serif; /* fuente general de texto */
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Tipografía inicio ===== */
+.inicio .content h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+  text-shadow: 0 0 20px rgba(105, 20, 223, 0.535);
+}
+
+.inicio .content p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+  text-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+/* ====== FONDOS POR SECCIÓN ====== */
+.inicio {
+  background-image: url('../imagenes/fondoTemp1.svg');
+}
+
+.caracteristicas {
+  background-image: url('../imagenes/fondoTemp2.svg');
+}
+
+/* ===== Estructura básica del scroll-snap (por si base.css no lo tiene) ===== */
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.slide {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: rgb(0, 0, 0);
+}

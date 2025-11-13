@@ -1,0 +1,129 @@
+/* ================================
+   RESPONSIVE GENERAL DEL SITIO
+================================ */
+
+/* Pantallas grandes (hasta 1200px) */
+@media (max-width: 1200px) {
+  .content { 
+    max-width: 700px; 
+    padding: 1.5rem; 
+  }
+
+  .inicio .content h1 { 
+    font-size: 2.8rem; 
+  }
+
+  .content h2 { 
+    font-size: 2.2rem; 
+  }
+}
+
+/* Pantallas medianas (hasta 900px) */
+@media (max-width: 900px) {
+  .content { 
+    max-width: 600px; 
+  }
+
+  .inicio .content h1 { 
+    font-size: 2.4rem; 
+  }
+
+  .team-card { 
+    width: 260px; 
+  }
+
+  /* ===== Responsive para INICIO (logos y "próximamente") ===== */
+  .logo {
+    width: 90px;
+    top: 20px;
+  }
+
+  .logo-izq { left: 25px; }
+  .logo-der { right: 25px; }
+
+  .proximamente {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .proximamente:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Pantallas pequeñas (tablets o celulares, hasta 720px) */
+@media (max-width: 720px) {
+  .slide { 
+    height: auto; 
+    padding: 60px 0; 
+  }
+
+  .team-container { 
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  /* Ajustes adicionales de INICIO */
+  .inicio .content h1 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 70px;
+    top: 15px;
+  }
+
+  .logo-izq { left: 15px; }
+  .logo-der { right: 15px; }
+
+  .proximamente {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .proximamente:hover::after {
+    content: "Próximamente en celulares";
+    font-size: 0.85rem;
+  }
+}
+
+/* Pantallas muy pequeñas (celulares pequeños, hasta 480px) */
+@media (max-width: 480px) {
+  .inicio .content h1 { 
+    font-size: 1.6rem; 
+  }
+
+  .team-card { 
+    width: 90%; 
+    max-width: 340px; 
+  }
+
+  .logo {
+    width: 60px;
+    top: 10px;
+  }
+
+  .logo-izq { left: 10px; }
+  .logo-der { right: 10px; }
+
+  .proximamente {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Pantallas ultra pequeñas (menos de 400px) */
+@media (max-width: 400px) {
+  .logo {
+    width: 50px;
+  }
+
+  .inicio .content h1 {
+    font-size: 1.4rem;
+  }
+
+  .proximamente {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+}

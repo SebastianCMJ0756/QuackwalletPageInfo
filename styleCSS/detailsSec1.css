@@ -1,0 +1,117 @@
+/* ======== DECORACIÓN PRIMERA SECCIÓN (INICIO) ======== */
+
+/* Estructura general del contenido */
+.inicio {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+.titulo-principal {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #1E3A8A;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 2;
+  opacity: 0;
+  animation: aparecerSuave 1.5s ease forwards;
+}
+
+/* Animación suave del título */
+@keyframes aparecerSuave {
+  0% {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== LOGOS SUPERIORES ===== */
+.logo {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-izq {
+  top: 25px;
+  left: 120px;
+}
+
+.logo-der {
+  top: 25px;
+  right: 120px;
+}
+
+/* ===== CONTENEDOR "PRÓXIMAMENTE" ===== */
+.proximamente-contenedor {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  left: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+/* Ícono Play Store */
+.icon-playstore {
+  font-size: 2.2rem;
+  color: #000000;
+  transition: transform 0.3s ease;
+}
+
+/* Texto inicial */
+.proximamente {
+  background: rgba(0, 0, 0, 0.2);
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+/* Texto oculto (hover) */
+.proximamente-hover {
+  color: #000000;
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover del contenedor */
+.proximamente-contenedor:hover .proximamente {
+  transform: scale(1.1);
+  background: #fdd87d;
+  color: #000;
+}
+
+.proximamente-contenedor:hover .icon-playstore {
+  transform: translateY(-5px);
+}
+
+.proximamente-contenedor:hover .proximamente-hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+

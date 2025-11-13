@@ -1,0 +1,126 @@
+/* ===========================
+   SECCIÓN 2: CARACTERÍSTICAS
+   =========================== */
+
+.section2-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+}
+
+/* --- LADO IZQUIERDO --- */
+.info-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-cards .card {
+  background: #fff8e6;
+  border: 2px solid #f4d46b;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.info-cards h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.info-cards p {
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* --- LADO DERECHO (PROTOTIPO) --- */
+.phone-prototype {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-frame {
+  position: relative;
+  width: 260px;
+  height: 520px;
+  border: 10px solid #000;
+  border-radius: 40px;
+  background: #111;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.phone-frame::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 6px;
+  background: #333;
+  border-radius: 3px;
+}
+
+/* --- Pantalla del celular --- */
+.screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* --- Animación cíclica para todas las imágenes --- */
+@keyframes fadeCycle {
+  0% { opacity: 1; }
+  5% { opacity: 1; }
+  10% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* --- Todas las imágenes dentro del marco del teléfono --- */
+.phone-frame .screen {
+  animation: fadeCycle 95s infinite; /* 19 imágenes × 5s cada una */
+}
+
+/* --- Retrasos para mostrar cada imagen en orden --- */
+.phone-frame .screen:nth-child(1) { animation-delay: 0s; }
+.phone-frame .screen:nth-child(2) { animation-delay: 5s; }
+.phone-frame .screen:nth-child(3) { animation-delay: 10s; }
+.phone-frame .screen:nth-child(4) { animation-delay: 15s; }
+.phone-frame .screen:nth-child(5) { animation-delay: 20s; }
+.phone-frame .screen:nth-child(6) { animation-delay: 25s; }
+.phone-frame .screen:nth-child(7) { animation-delay: 30s; }
+.phone-frame .screen:nth-child(8) { animation-delay: 35s; }
+.phone-frame .screen:nth-child(9) { animation-delay: 40s; }
+.phone-frame .screen:nth-child(10) { animation-delay: 45s; }
+.phone-frame .screen:nth-child(11) { animation-delay: 50s; }
+.phone-frame .screen:nth-child(12) { animation-delay: 55s; }
+.phone-frame .screen:nth-child(13) { animation-delay: 60s; }
+.phone-frame .screen:nth-child(14) { animation-delay: 65s; }
+.phone-frame .screen:nth-child(15) { animation-delay: 70s; }
+.phone-frame .screen:nth-child(16) { animation-delay: 75s; }
+.phone-frame .screen:nth-child(17) { animation-delay: 80s; }
+.phone-frame .screen:nth-child(18) { animation-delay: 85s; }
+.phone-frame .screen:nth-child(19) { animation-delay: 90s; }
