@@ -58,26 +58,65 @@
   right: 120px;
 }
 
-/* ===== CONTENEDOR "PRÓXIMAMENTE" ===== */
-.proximamente-contenedor {
+/* ==== FOOTER NUEVO DE LA SECCIÓN INICIO ==== */
+.inicio-footer {
   position: absolute;
-  bottom: 80px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
-  left: 200px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 2;
+  gap: 12px;
+
+  padding: 12px 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  font-family: 'Poppins', sans-serif;
+  z-index: 10;
 }
 
-/* Ícono Play Store */
-.icon-playstore {
-  font-size: 2.2rem;
+/* icono */
+.play-icon {
+  font-size: 1.8rem;
   color: #000000;
-  transition: transform 0.3s ease;
 }
+
+/* texto “Próximamente” */
+.footer-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+/* texto pequeño */
+.footer-text {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #000;
+  opacity: 0.9;
+}
+
+/* ==== RESPONSIVE CELULAR ==== */
+@media (max-width: 600px) {
+  .inicio-footer {
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 16px;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+  }
+}
+
+
+
 
 /* Texto inicial */
 .proximamente {

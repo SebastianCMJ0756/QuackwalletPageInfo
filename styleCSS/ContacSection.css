@@ -2,22 +2,28 @@
 .contacto-slide {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+
+  /* 🔥 Antes estaba height: 100vh (cortaba las tarjetas) */
+  min-height: 100vh;
+  padding: 60px 0;
+
   width: 100%;
   color: #fff;
   background: linear-gradient(180deg, rgba(10,10,10,0.0), rgba(10,10,10,1) 80%);
   scroll-snap-align: start;
-  overflow: hidden; /* Evita scroll dentro de la slide */
+
+  /* 🔥 Para permitir que la sección crezca sin cortar contenido */
+  overflow: visible;
 }
 
 /* Contenedor interno */
 .contact-inner {
   width: 100%;
-  max-width: 1200px;
-  padding: 80px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -36,18 +42,32 @@
 /* ===== TARJETAS DEL EQUIPO ===== */
 .team-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;   /* 🔥 Todas en UNA sola fila horizontal */
   justify-content: center;
   gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 40px;
+
+  width: 100%;
+  overflow-x: auto;   /* 🔥 Para que no se corten si la pantalla es pequeña */
+  padding: 20px 0;
+}
+
+.team-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.team-container::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
 }
 
 .team-card {
   background: rgba(255, 255, 255, 0.04);
   border-radius: 15px;
   width: 300px;
+
+  /* 🔥 Para que nunca se encojan ni se deformen */
+  flex-shrink: 0;
+
   overflow: hidden;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   cursor: pointer;
