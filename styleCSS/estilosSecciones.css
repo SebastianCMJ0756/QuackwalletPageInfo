@@ -38,11 +38,11 @@
 
 /* ====== FONDOS POR SECCIÓN ====== */
 .inicio {
-  background-image: url('../imagenes/fondoTemp1.svg');
+  background-image: url('../imagenes/layered-peaks-haikei (2).png');
 }
 
 .caracteristicas {
-  background-image: url('../imagenes/fondoTemp2.svg');
+  background-image: url('../imagenes/layered-peaks-haikei (2).png');
 }
 
 /* ===== Estructura básica del scroll-snap (por si base.css no lo tiene) ===== */
