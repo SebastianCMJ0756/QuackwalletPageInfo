@@ -1,179 +1,210 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quackwallet info</title>
-  <link rel="icon" type="image/png" href="imagenes/logodef04.png">
-
-
-  <!-- Font Awesome (íconos) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- TIPOGRAFÍAS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;600;700&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styleCSS/resets.css">
-  <link rel="stylesheet" href="styleCSS/base.css">
-  <link rel="stylesheet" href="styleCSS/seccionesprincipales.css">
-  <link rel="stylesheet" href="styleCSS/estilosSecciones.css">
-  <link rel="stylesheet" href="styleCSS/ContacSection.css">
-  <link rel="stylesheet" href="styleCSS/detailsSec1.css">
-  <link rel="stylesheet" href="styleCSS/detailsSec2.css">
-  <link rel="stylesheet" href="styleCSS/Responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quackwallet</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
 </head>
+    <body class="bg-black antialiased selection:bg-blue-500/30"></body>  
 
-<body>
-
-  <!-- CONTENEDOR CON SCROLL-SNAP -->
-  <div class="container">
-
-    <!-- =============== SECCIÓN 1: INICIO =============== -->
-    <section class="slide inicio">
-      <!-- Logos superiores -->
-      <img src="imagenes/logodef04.png" alt="Logo Quackwallet Izquierdo" class="logo logo-izq">
-      <img src="imagenes/logoMinuto-removebg-preview.png" alt="Logo Uniminuto Derecho" class="logo logo-der">
-
-      <!-- Contenido principal -->
-      <div class="contenido-inicio">
-        <h1 class="titulo-principal">Bienvenidos a Quackwallet</h1>
-        <p>Con nosotros, tus tarjetas estarán a salvo.</p>
-
-      <!-- Botón “Próximamente” -->
-      <div class="proximamente-contenedor">
-        <i class="fab fa-google-play icon-playstore"></i>
-        <div class="proximamente">Próximamente</div>
-        <div class="proximamente-hover">Proximamente disponibles en tiendas android </div>
-      </div>
-
-    </section>
-
-    <!-- =============== SECCIÓN 2: CARACTERÍSTICAS =============== -->
-<!-- =============== SECCIÓN 2: CARACTERÍSTICAS =============== -->
-  <section class="slide caracteristicas">
-    <div class="section2-container">
-      <!-- LADO IZQUIERDO -->
-      <div class="info-cards">
-        <div class="card">
-          <h2>¿Qué es QuackWallet?</h2>
-          <p>QuackWallet es una billetera virtual diseñada para simplificar la experiencia financiera. Aca podras gestionar tus gastos, recibir notificaciones de seguridad en tiempo real, proteger tus transacciones y acceder a herramientas para mejorar la seguridad de tus tarjetas,todo con una interfaz intuitiva inspirada en un diseño amigable, seguro y confiable.</p>
+        <div class="fixed inset-0 -z-10 bg-black"> <img src="imagenes/layered-peaks-haikei (2).png" 
+                class="w-full h-full object-cover opacity-100 transition-opacity duration-1000" 
+                alt="Background">
+            
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40"></div>
         </div>
-        <div class="card">
-          <h2>¿Por qué nosotros?</h2>
-          <p>Nosotros ofrecemos una solución segura y enfocada 100% en el usuario. Implementamos medidas de protección en tiempo real, una interfaz clara y herramientas prácticas que realmente facilitan la gestión de tu dinero. Con QuackWallet administras tu dinero, tu decides la seguridad en tus tarjeta, y obtienes notificaciones cada vez que se detecte algo sospechoso</p>
-        </div>
-      </div>
+        <main class="h-screen overflow-y-scroll snap-y snap-mandatory no-scrollbar">
+            
+            <section id="inicio" class="relative h-screen w-full snap-start overflow-hidden px-6 py-10 flex flex-col justify-between">
+        
+            <div class="flex-grow flex flex-col items-center justify-center text-center">
+                <h1 class="text-white text-6xl md:text-9xl font-black tracking-tighter drop-shadow-2xl">
+                    QUACk<span class="text-blue-500">WALLET</span>
+                </h1>
+                <p class="text-black text-lg md:text-2xl mt-4 font-light tracking-widest uppercase">
+                    Tu mismo tienes el control de tus tarjetas
+                </p>
+            </div>
 
-      <!-- LADO DERECHO -->
-      <div class="phone-prototype">
-        <div class="phone-frame">
-          <img src="imagenes/1.png" alt="Prototipo 1" class="screen active">
-          <img src="imagenes/2.png" alt="Prototipo 2" class="screen">
-          <img src="imagenes/3.png" alt="Prototipo 3" class="screen">
-          <img src="imagenes/4.png" alt="Prototipo 4" class="screen">
-          <img src="imagenes/5.png" alt="Prototipo 5" class="screen">
-          <img src="imagenes/6.png" alt="Prototipo 6" class="screen">
-          <img src="imagenes/7.png" alt="Prototipo 7" class="screen">
-          <img src="imagenes/8.png" alt="Prototipo 8" class="screen">      
-          <img src="imagenes/9.png" alt="Prototipo 9" class="screen">
-          <img src="imagenes/10.png" alt="Prototipo 10" class="screen">
-          <img src="imagenes/11.png" alt="Prototipo 11" class="screen">
-          <img src="imagenes/12.png" alt="Prototipo 12" class="screen">
-          <img src="imagenes/13.png" alt="Prototipo 13" class="screen">
-          <img src="imagenes/14.png" alt="Prototipo 14" class="screen">
-          <img src="imagenes/15.png" alt="Prototipo 15" class="screen">
-          <img src="imagenes/16.png" alt="Prototipo 16" class="screen">
-          <img src="imagenes/17.png" alt="Prototipo 17" class="screen">
-          <img src="imagenes/18.png" alt="Prototipo 18" class="screen">
-          <img src="imagenes/19.png" alt="Prototipo 19" class="screen">    
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="absolute top-10 right-10 w-24 h-24 md:w-40 md:h-40">
+                <img src="imagenes/logodef04.png" class="absolute inset-0 w-full h-full object-contain animate-[fade-alternate_15s_infinite]" alt="Logo QuackWallet">
+                <img src="imagenes/semillerologo.jpeg" class="absolute inset-0 w-full h-full object-contain animate-[fade-alternate_15s_infinite_reverse]" alt="Logo IsQuanTum">
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-end w-full gap-6">
+                
+                <div class="flex gap-4 w-full md:w-auto">
+                    <div class="bg-[#121212] backdrop-blur-md p-4 rounded-lg border border-[#fdd87d] w-1/2 md:w-40">
+                        <span class="block text-[#fdd87d] font-bold text-xl">Control total en tus tarjetas</span>
+                        <span class="text-[#fef5da] text-xs uppercase">Podras ver cuando y donde se uso tu tarjeta recientemente</span>
+                    </div>
+                    <div class="bg-[#121212] backdrop-blur-md p-4 rounded-lg border border-[#fdd87d] w-1/2 md:w-40">
+                        <span class="block text-[#fdd87d] font-bold text-xl">Seguridad</span>
+                        <span class="text-[#fef5da] text-xs uppercase">Tu mismo eliges la seguridad de cada una de tus tarjetas, tendras control total sobre ellas</span>
+                    </div>
+                </div>
+
+                <div class="bg-black/30 backdrop-blur-lg px-8 py-3 rounded-full border border-black-500/50 flex items-center gap-2">
+                    <span class="text-white text-sm font-medium">Muy pronto en:</span>
+                    <div class="flex gap-2">
+                        <span class="text-white font-bold">Web</span>
+                        <span class="text-white/40">|</span>
+                        <span class="text-white font-bold">Android</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="info" class="bg-[#fef5da]">
+            <div class="info-grid px-4">
+                
+                <div class="flex flex-col items-center order-1 w-full">
+                    <input type="checkbox" id="toggle-mision" class="card-toggle">
+                    <div class="card-container">
+                        <label for="toggle-mision" class="card-expanded cursor-pointer shadow-lg">
+                            <h2 class="text-[#fdd87d] font-black text-xl uppercase tracking-widest">MISIÓN</h2>
+                            <div class="card-content text-center px-4">
+                                <p class="text-white text-size-lg leading-tight">Para personas preocupadas por la seguridad en sus pagos electrónicos, ofrecemos soluciones modernas de protección y gestión personalizada utilizando tecnologías avanzadas. Así, optimizamos su confiabilidad, brindamos control y educación financiera, y fortalecemos su confianza en cada transacción</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center order-3 md:order-2">
+                    <div class="phone-frame">
+                        <div class="screen-container">
+                            <img src="imagenes/1.png" class="screen">
+                            <img src="imagenes/2.png" class="screen">
+                            <img src="imagenes/3.png" class="screen">
+                            <img src="imagenes/4.png" class="screen">
+                            <img src="imagenes/5.png" class="screen">
+                            <img src="imagenes/6.png" class="screen">
+                            <img src="imagenes/7.png" class="screen">
+                            <img src="imagenes/8.png" class="screen">
+                            <img src="imagenes/9.png" class="screen">
+                            <img src="imagenes/10.png" class="screen">
+                            <img src="imagenes/11.png" class="screen">
+                            <img src="imagenes/12.png" class="screen">                            
+                            <img src="imagenes/13.png" class="screen">
+                            <img src="imagenes/14.png" class="screen">
+                            <img src="imagenes/15.png" class="screen">
+                            <img src="imagenes/16.png" class="screen">
+                            <img src="imagenes/17.png" class="screen">
+                            <img src="imagenes/18.png" class="screen">
+                            <img src="imagenes/19.png" class="screen">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center order-2 md:order-3 w-full">
+                    <input type="checkbox" id="toggle-vision" class="card-toggle">
+                    <div class="card-container">
+                        <label for="toggle-vision" class="card-expanded cursor-pointer shadow-lg">
+                            <h2 class="text-[#fdd87d] font-black text-xl uppercase tracking-widest">VISIÓN</h2>
+                            <div class="card-content text-center px-4">
+                                <p class="text-white text-size-lg leading-tight">Liderar la transformación digital en seguridad y gestión financiera, ofreciendo soluciones innovadoras, eficientes y confiables, impactando positivamente a millones de usuarios para 2030.</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
 
-    <!-- =============== SECCIÓN 3: CONTACTO =============== -->
-<!-- =============== SECCIÓN 3: CONTACTO =============== -->
-<section class="slide contacto-slide" id="contact">
-  <div class="contact-inner">
+        
+        <section id="prototipo" class="h-screen w-full snap-start flex items-center justify-center px-6">
+            <div class="max-w-6xl w-full text-center">
+                <h2 class="text-white text-4xl font-bold mb-10">Nuestro plan de negocios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <span class="text-9xl text-amber-50 size-7">Plan de negocios ¡PROXIMAMENTE!</span>
+                </div>
+            </div>
+        </section>
 
-    <div class="contact-header">
-      <h2>Conoce a Nuestro Equipo</h2>
-    </div>
 
-    <div class="team-container">
 
-      <!-- Integrante 1 -->
-      <div class="team-card">
-        <div class="team-img">
-          <img src="imagenes/SebastianProfile.jpeg" alt="Juan Sebastián">
-        </div>
-        <div class="team-info">
-          <h3>Juan Sebastián Calderon Martinez</h3>
-          <p>Desarrollador frontend y diseñador de la aplicación y sus interfaces.</p>
-          <div class="team-social">
-            <a href="https://github.com/SebastianCMJ0756" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/__xsebastc756__" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Integrante 2 -->
-      <div class="team-card">
-        <div class="team-img">
-          <img src="imagenes/ManuelProfile.jpeg" alt="Manuel Jose">
-        </div>
-        <div class="team-info">
-          <h3>Manuel Jose Rivera Guzman</h3>
-          <p>Desarrollador backend encargado del backend de la aplicación (Líder nato).</p>
-          <div class="team-social">
-            <a href="https://github.com/Manuel1532PK" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/manuel_riverspk?igsh=endmM2V3Mm5kOGw=" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Integrante 3 -->
-      <div class="team-card">
-        <div class="team-img">
-          <img src="imagenes/EstebanProfile.jpeg" alt="Nombre Integrante 3">
-        </div>
-        <div class="team-info">
-          <h3>Esteban Morales</h3>
-          <p>Asesor en el area de programacion de los proyectos del semillero QUANTUM.</p>
-          <div class="team-social">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
+        <section id="equipo" class="min-h-screen w-full snap-start flex flex-col items-center justify-center bg-black py-10 px-6">
+            <h2 class="text-[#fdd87d] font-black text-5xl md:text-6xl uppercase tracking-[0.3em] mb-16 text-center">Conoce a nuestro equipo</h2>
 
-      <!-- Integrante 4 -->
-      <div class="team-card">
-        <div class="team-img">
-          <img src="imagenes/JuanCarlosProfile.png" alt="Nombre Integrante 4">
-        </div>
-        <div class="team-info">
-          <h3>Juan Carlos Gonzales</h3>
-          <p>Asesor en el area de documentacion de los proyectos del semillero QUANTUM.</p>
-          <div class="team-social">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
+            <div class="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 w-full max-w-6xl mx-auto">
+                
+                <div class="member-card-wrapper">
+                    <input type="radio" name="member" id="member1" class="member-check">
+                    <label for="member1" class="member-card">
+                        <div class="member-socials-top">
+                            <a href="https://github.com/Manuel1532PK" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/manuel_riverspk?igsh=endmM2V3Mm5kOGw=" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
 
-    </div> <!-- FIN team-container -->
+                        <img src="imagenes/ManuelProfile.jpeg" class="member-img">
+                        
+                        <div class="member-info">
+                            <h3 class="name">Manuel Jose Rivera Guzman</h3>
+                            <p class="role">Desarrollador backend encargado del backend de la aplicación (Líder nato).</p>
+                        </div>
+                    </label>
+                </div>
 
-    <div class="contact-footer">
-      <p>© 2025 Quackwallet | Desarrollado por el equipo QUANTUM (ISUM) Universidad Uniminuto Ibague-Tolima</p>
-    </div>
+                <div class="member-card-wrapper">
+                    <input type="radio" name="member" id="member2" class="member-check">
+                    <label for="member2" class="member-card">
+                        <div class="member-socials-top">
+                            <a href="https://github.com/SebastianCMJ0756" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/__xsebastc756__?igsh=MXJ2YjdzaG9vMTN2eA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <img src="imagenes/SebastianProfile.jpeg" class="member-img">
+                        <div class="member-info">
+                            <h3 class="name">Juan Sebastian Calderon Martinez</h3>
+                            <p class="role">Desarrollador frontend y diseñador de la aplicación y sus interfaces.</p>
+                        </div>
+                    </label>
+                </div>
 
-  </div>
-</section>
+                <div class="member-card-wrapper">
+                    <input type="radio" name="member" id="member3" class="member-check">
+                    <label for="member3" class="member-card">
+                        <div class="member-socials-top">
+                            <a href="https://github.com/estemoca" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <img src="imagenes/EstebanProfile.jpeg" class="member-img">
+                        <div class="member-info">
+                            <h3 class="name">Esteban Morales</h3>
+                            <p class="role">Asesor en el area de programacion de los proyectos del semillero QUANTUM.</p>
+                        </div>
+                    </label>
+                </div>
 
-  </div>
+                <div class="member-card-wrapper">
+                    <input type="radio" name="member" id="member4" class="member-check">
+                    <label for="member4" class="member-card">
+                        <div class="member-socials-top">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <img src="imagenes/JuanCarlosProfile.png" class="member-img">
+                        <div class="member-info">
+                            <h3 class="name">Juan Carlos Gonzales</h3>
+                            <p class="role">Asesor en el área de documentación de los proyectos del semillero QUANTUM.</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <footer class="mt-24 pt-15 pb-4 text-center">
+                <p class="text-white/40 text-xs tracking-widest uppercase font-light">
+                    © 2026 <span class="text-[#fdd87d] font-bold">Quackwallet</span> | Desarrollado por el equipo <span class="text-white/80">QUANTUM (ISUM)</span> 
+                    <br class="md:hidden"> Universidad Uniminuto Ibagué-Tolima
+                </p>
+            </footer>
+        </section>
+    </main>
 
 </body>
 </html>
